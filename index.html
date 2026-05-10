@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Number Lock</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="hero">
+      <div>
+        <h1>Number Lock</h1>
+        <p>Tap numbers 1 through 9 in order before the round ends.</p>
+      </div>
+    </header>
+
+    <section class="ad-banner" aria-label="Sponsored advertisement">
+      <span class="ad-label">Sponsored</span>
+      <div id="adText" class="ad-text">Try our fast puzzle app today!</div>
+    </section>
+
+    <section class="status-row">
+      <div class="status-card">
+        <span class="status-title">Time</span>
+        <strong id="time">00:00</strong>
+      </div>
+      <div class="status-card">
+        <span class="status-title">Next</span>
+        <strong id="nextNumber">1</strong>
+      </div>
+      <div class="status-card">
+        <span class="status-title">Tries</span>
+        <strong id="tries">0</strong>
+      </div>
+    </section>
+
+    <section id="grid" class="grid" aria-label="Number game grid"></section>
+
+    <div class="controls">
+      <button id="restartBtn">Restart Game</button>
+    </div>
+
+    <div id="message" class="message"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
